@@ -11,8 +11,9 @@ git clone git@github.com:mystand/mystand-dev-box.git
 cd mystand-dev-box
 ```
 
-Then you need to move your Vagrantfile.example to Vagrantfile.
-Change F:/work/projects of Vagrantfile to destination to your shared folder
+Then you need to rename Vagrantfile.example to Vagrantfile.
+Open Vagrantfile and change F:/work/projects of Vagrantfile to destination to your shared folder
+
 ```
 config.vm.synced_folder "F:/work/projects", "/home/vagrant/projects", type: "smb"
 ```
