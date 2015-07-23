@@ -60,6 +60,8 @@ GRANT ALL PRIVILEGES ON inexistent_activerecord_unittest.* to 'rails'@'localhost
 SQL
 
 install 'Nokogiri dependencies' libxml2 libxml2-dev libxslt1-dev
+echo "installing Postgis"
+sudo apt-get install -y postgis postgresql-9.3-postgis-2.1
 
 #Installing Elasticsearch
 echo debconf shared/accepted-oracle-license-v1-1 select true | sudo debconf-set-selections
